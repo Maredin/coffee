@@ -1,0 +1,88 @@
+.individual {
+    background-image: url(../img/individual/bg.png);
+    height: 638px;
+    max-width: 1955px;
+    margin: 0 auto;
+    background-size: cover;
+    padding-left: 143px;
+    padding-top: 112px;
+    margin-top: 53px;
+    border-radius: 12px;
+    background-position-x: center;
+}
+
+.individual__wrapper {
+    max-width: 922px;
+}
+
+.individual__title {
+    color: #FFF;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.individual__desc {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 48px;
+}
+
+.individual__link {
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    border: 1.269px solid #FFF;
+    padding: 19px 35px;
+    margin-top: 48px;
+}
+
+.individual__link:hover {
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+@media(max-width:1955px) {
+    .individual {
+        height: calc((100vw - 446px)/(1955 - 446) * (638 - 520) + 520px);
+        padding-left: calc((100vw - 446px)/(1955 - 446) * (146 - 28) + 28px);
+        padding-right: calc((100vw - 446px)/(1955 - 446) * (146 - 28) + 28px);
+        padding-top: calc((100vw - 446px)/(1955 - 446) * (112 - 59) + 59px);
+        margin-top: calc((100vw - 446px)/(1955 - 446) * (53 - 32) + 32px);
+    }
+
+    .individual__title {
+        font-size: calc((100vw - 446px)/(1955 - 446) * (34 - 28) + 28px);
+    }
+
+    .individual__desc {
+        font-size: calc((100vw - 446px)/(1955 - 446) * (24 - 17) + 17px);
+        line-height: calc((100vw - 446px)/(1955 - 446) * (29 - 17) + 17px);
+        margin-top: calc((100vw - 446px)/(1955 - 446) * (48 - 40) + 40px);
+    }
+
+    .individual__link {
+        margin-top: calc((100vw - 446px)/(1955 - 446) * (48 - 40) + 40px);
+    }
+}
+
+@media(max-width: 922px) {
+    .individual {
+        text-align: center;
+    }
+}
+
+@media(max-width: 599px) {
+    .individual__link {
+        width: 100%;
+    }
+}

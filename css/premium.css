@@ -1,0 +1,24 @@
+.premium {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 1955px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 56px;
+}
+
+.premium__img {
+    width: 580px;
+}
+
+@media(max-width:1955px) {
+    .premium {
+        margin-top: calc((100vw - 446px)/(1955 - 446) * (56 - 32) + 32px);
+    }
+
+    .premium__img {
+        width: calc((100vw - 320px)/(1955 - 320) * (580 - 290) + 290px);
+    }
+}

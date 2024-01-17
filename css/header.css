@@ -1,7 +1,8 @@
 .header {
     background: url(../img/header/bg_header.png) center no-repeat;
+    background-size: cover;
     height: 1071px;
-    padding: 40px 5px;
+    padding: 40px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -57,4 +58,20 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media (max-width:1955px) {
+    .header {
+        height: calc((100vw - 320px)/(1955 - 446) * (1071 - 551) + 551px);
+    }
+}
+
+@media (max-width: 768px) {
+    .header__title {
+        justify-content: center;
+    }
+
+    .header__nav {
+        display: none;
+    }
 }

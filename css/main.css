@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 @import './header.css';
+@import './showroom.css';
+@import './warranty.css';
+@import './premium.css';
+@import './individual.css';
 
 
 * {
