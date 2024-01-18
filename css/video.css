@@ -1,0 +1,21 @@
+.video {
+    margin: 0 auto;
+    margin-top: 49px;
+    max-width: 1100px;
+    padding: 0 15px;
+}
+
+.video__youtobe {
+    width: 100%;
+    height: 500px;
+}
+
+@media(max-width:1955px) {
+    .video {
+        max-width: 1100px;
+    }
+    
+    .video__youtobe {
+        height: calc((100vw - 320px)/(1955 - 320) * (500 - 290) + 290px);
+    }
+}

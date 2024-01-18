@@ -1,6 +1,6 @@
-import popup from "./modules/popup.js";
+import form from "./modules/form.js";
 
 window.addEventListener('DOMContentLoaded', () => {
-    popup('.poppup', '.btn', false);
-    
+    form();
+
 });

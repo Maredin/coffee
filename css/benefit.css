@@ -1,0 +1,60 @@
+.benefit {
+    background-image: url(../img/benefit/bg.png);
+    height: 638px;
+    max-width: 1955px;
+    margin: 0 auto;
+    padding-right: 143px;
+    padding-top: 151px;
+    margin-top: 53px;
+    border-radius: 12px;
+    background-position-x: center;
+}
+
+.benefit__wrapper {
+    max-width: 694px;
+    margin-left: auto;
+}
+
+.benefit__title {
+    color: #FFF;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.benefit__desc {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 48px;
+}
+
+@media(max-width:1955px) {
+    .benefit {
+        height: calc((100vw - 446px)/(1955 - 446) * (638 - 426) + 426px);
+        padding-left: calc((100vw - 446px)/(1955 - 446) * (146 - 28) + 28px);
+        padding-right: calc((100vw - 446px)/(1955 - 446) * (146 - 28) + 28px);
+        padding-top: calc((100vw - 446px)/(1955 - 446) * (151 - 71) + 71px);
+        margin-top: calc((100vw - 446px)/(1955 - 446) * (53 - 32) + 32px);
+    }
+
+    .benefit__title {
+        font-size: calc((100vw - 446px)/(1955 - 446) * (34 - 28) + 28px);
+    }
+
+    .benefit__desc {
+        font-size: calc((100vw - 446px)/(1955 - 446) * (24 - 17) + 17px);
+        line-height: calc((100vw - 446px)/(1955 - 446) * (29 - 17) + 17px);
+        margin-top: calc((100vw - 446px)/(1955 - 446) * (48 - 40) + 40px);
+    }
+
+}
+
+@media(max-width: 922px) {
+    .benefit {
+        text-align: center;
+    }
+}
