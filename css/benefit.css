@@ -8,6 +8,7 @@
     margin-top: 53px;
     border-radius: 12px;
     background-position-x: center;
+    background-size: cover;
 }
 
 .benefit__wrapper {

@@ -4,8 +4,10 @@
     background: rgba(25, 22, 28, 0.80);
     backdrop-filter: blur(5px);
     padding: 0 15px;
+    margin: 0 auto;
     margin-top: 49px;
     padding-bottom: 75px;
+    position: relative;
 }
 
 .contact__wrapper {
@@ -13,6 +15,7 @@
     margin: 0 auto;
     padding-top: 67px;
     text-align: center;
+    position: relative;
 }
 
 .contact__title {
@@ -26,7 +29,7 @@
 
 .contant__block {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 41px;
@@ -108,6 +111,21 @@
     background-color: rgba(255, 255, 255, 0.212);
 }
 
+.contact__img {
+    position: absolute;
+    z-index: -1;
+}
+
+.contact__img-big {
+    top: -40px;
+    left: -215px;
+}
+
+.contact__img-litle {
+    bottom: -100px;
+    right: -90px;
+}
+
 @media(max-width:1955px) {
     .contact {
         padding-bottom: calc((100vw - 446px)/(1955 - 446) * (75 - 25) + 25px);
@@ -122,7 +140,6 @@
     }
 
     .contant__block {
-        justify-content: space-between;
         gap: 20px;
     }
 
@@ -158,5 +175,17 @@
 
     .contant__block-form button {
         font-size: 16px;
+    }
+
+    .contact__img-big {
+        width: calc((100vw - 446px)/(1955 - 446) * (248 - 180) + 180px);
+        top: -40px;
+        left: calc((100vw - 320px)/(1955 - 320) * (-215 - 0) + 0px);
+    }
+
+    .contact__img-litle {
+        width: calc((100vw - 446px)/(1955 - 446) * (129 - 97) + 97px);
+        bottom: calc((100vw - 320px)/(1955 - 320) * (-100 + 45) - 45px);
+        right: calc((100vw - 320px)/(1955 - 320) * (-90 - 0) + 0px);
     }
 }

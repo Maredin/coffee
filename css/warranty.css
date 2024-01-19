@@ -1,4 +1,6 @@
 .warranty {
+    max-width: 1950px;
+    margin: 0 auto;
     margin-top: 48px;
     text-align: center;
     padding: 112px 15px 0 15px;

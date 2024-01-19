@@ -1,0 +1,14 @@
+.footer {
+    padding: 43px 0;
+}
+
+.footer__logo {
+    display: block;
+    margin: 0 auto;
+}
+
+@media(max-width:1955px) {
+    .footer__logo {
+        width: calc((100vw - 446px)/(1955 - 446) * (412 - 275) + 275px);
+    }
+}
