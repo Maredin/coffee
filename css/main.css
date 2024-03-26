@@ -11,6 +11,9 @@
 @import './contact.css';
 @import './footer.css';
 
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;
